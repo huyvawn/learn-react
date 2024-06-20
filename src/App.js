@@ -4,22 +4,38 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Welcome name="Neo" />
+      <Text />
+      <StyledText />
     </div>
   );
 }
+
+function Welcome(props) {
+  return(
+    <section>
+      <h1>
+        Hello, <span> {props.name}</span>
+      </h1>
+    </section>
+  );
+}
+
+function withStyles(Component) {
+  return(props) => {
+    const style = {
+      color: "red",
+      fontSize: "1em",
+      ...props.style,
+    };
+    return <Component {...props} style ={style} />;
+  };
+}
+
+const Text = ({style = {}}) => (
+  <p style={{ ...style, fontFamily: "Inter"}}>Hello world!</p>
+);
+
+const StyledText = withStyles(Text);
 
 export default App;
