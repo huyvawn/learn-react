@@ -1,14 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
-import { FaStar } from 'react-icons/fa';
-import ProductList from './components/Productlist';
+import './session4.css'
+import Game from './session04/snippet17';
 
 function App() {
+  
   return (
     <div className='App'>
-  <ProductList />
-  </div>
-  )
+      <Game />
+    </div>
+  );
 }
 
+
 export default App;
+
