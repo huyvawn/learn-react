@@ -7,16 +7,18 @@ function Game() {
         setCount(count+1);
     };
     return(
-        <div>
+        <div className="row justify-content-end">
+        <div className="border col-6">
             <h1>Game started {count} time</h1>
             <StartGame onPlayerClick={startGame} />
+        </div>
         </div>
     )
 }
 
 function StartGame({onPlayerClick}) {
     return(
-        <div>
+        <div >
             <button onClick={onPlayerClick}>Start</button>
         </div>
     )
