@@ -65,22 +65,38 @@ function App() {
      <div className='text-center' id='process'>
       <h4>Our process</h4>
       <h1>Outstanding digital <span className='text-gradient'>solutions in 4 steps</span></h1>
-      <div className='row process-row border'>
+      <div className='row process-row'>
         
-          <div className='border steps' id='step1'>
+          <div className='border-fade steps step1'>
             <h1>Step 1</h1>
           </div>
         
-        <div className='col-md-4 text-start process-right border' >
+        <div className='col-md-5 text-start process-right' >
           <Process {...processes.step1}/>
         </div>
       </div>
-      <div className='row process-row-reverse border'>
-          <div className='border steps'>
+      <div className='row process-row-reverse'>
+          <div className='border-fade steps step2'>
             <h1>Step 2</h1>
           </div>
-          <div className='col-md-4 text-start border process-left'>
+          <div className='col-md-5 text-start process-left'>
             <Process {...processes.step2}/>
+          </div>
+      </div>
+      <div className='row process-row'>
+          <div className='border-fade steps step1'>
+            <h1>Step 3</h1>
+          </div>
+          <div className='col-md-5 text-start process-right'>
+            <Process {...processes.step3} />
+          </div>
+      </div>
+      <div className='row process-row-reverse'>
+          <div className='border-fade steps step2'>
+            <h1>Step 4</h1>
+          </div>
+          <div className='col-md-5 text-start process-left'>
+            <Process {...processes.step4} />
           </div>
       </div>
      </div>
