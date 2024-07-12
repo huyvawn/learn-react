@@ -1,0 +1,40 @@
+
+body{
+    overflow-x: hidden;
+}
+
+header, footer{
+    background-color: rgb(24, 126, 241);
+    color: white;
+}
+header .row{
+    align-items: center;
+    padding-left: 30px;
+}
+#first-clip{
+    margin-top: 30px;
+}
+.video-section{
+    /* padding-left: 30px; */
+    margin-top: 60px;
+}
+.video-item{
+    margin-left: 60px;
+}
+.title{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.description{
+    margin-top: 15px;
+}
+footer{
+    padding-right: 30px;
+    margin-top: 10px;
+}
+@media (max-width:768px){
+    .video-item{
+        margin-left: 0;
+    }
+}
