@@ -11,7 +11,7 @@ function MyPage(){
         <div className="container" id="Body">
         <div className="text-center" id="first-clip">
             <h4>My Studio</h4>
-        <video width="320" height="240" controls>
+        <video width="480" height="340" controls>
   <source src={hochiminh2}/>
   
 Your browser does not support the video tag.
