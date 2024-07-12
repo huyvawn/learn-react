@@ -24,7 +24,12 @@ header .row{
 .title{
     display: flex;
     margin-top: 20px;
-    align-items: center;
+    flex-direction: row;
+    align-items:end;
+}
+.title h4{
+    position: relative;
+    top:6px;
 }
 .description{
     margin-top: 15px;
